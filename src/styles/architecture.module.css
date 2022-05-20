@@ -1,0 +1,23 @@
+.mainPhoto {
+  height: calc(100vh - 65px);
+  width: 100vw;
+  object-fit: cover;
+}
+
+.about p {
+  margin-bottom: 24px;
+}
+
+.about p:first-of-type {
+  margin-top: 16px;
+}
+
+.about p:last-of-type {
+  margin-bottom: 80px;
+}
+
+.sectionPhoto {
+  padding: 0 16px;
+  width: 100vw;
+  object-fit: cover;
+}

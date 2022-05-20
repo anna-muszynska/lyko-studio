@@ -1,0 +1,39 @@
+.mainPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.subpage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 90%;
+  margin: auto;
+}
+
+.mainPage img {
+  padding: 0 85px 0;
+  margin-bottom: 48px;
+}
+
+.mainPage a {
+  text-decoration: none;
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 0.25em;
+  color: #000;
+}
+
+.illustrationsLink {
+  font-family: "League Script", cursive;
+  text-transform: none;
+}

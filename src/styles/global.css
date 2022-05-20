@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*box-sizing:  inherit;  */
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  color: #000;
+  background-color: #fff;
+  height: 100vh;
+}
+
+header {
+  height: 100vh;
+}
+
+footer {
+  padding-bottom: 16px;
+}
+
+footer p {
+  white-space: pre-line;
+  font-family: "Helvetica", sans-serif;
+  margin-bottom: 16px;
+}
+
+h2 {
+  text-transform: uppercase;
+  padding: 16px;
+}
+
+p {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 145%;
+  padding: 0 16px 0 16px;
+  margin-bottom: 16px;
+}
