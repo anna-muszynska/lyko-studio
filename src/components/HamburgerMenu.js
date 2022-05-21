@@ -1,5 +1,5 @@
 import React, { useRef } from "react"
-import * as styles from "../styles/HamburgerMenu.module.css"
+import * as styles from "./HamburgerMenu.module.css"
 import { Link } from "gatsby"
 
 const HamburgerMenu = () => {

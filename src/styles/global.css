@@ -23,6 +23,7 @@ header {
 
 footer {
   padding-bottom: 16px;
+  height: 100vh;
 }
 
 footer p {

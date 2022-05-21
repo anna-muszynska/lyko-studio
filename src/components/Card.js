@@ -1,5 +1,5 @@
 import React from "react"
-import * as styles from "../styles/Card.module.css"
+import * as styles from "./Card.module.css"
 
 const Card = ({ photoPath, name, description }) => {
   return (

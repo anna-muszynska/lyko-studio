@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   background-color: #fff;
+  width: 100vw;
 }
 
 .mainPhoto {
@@ -28,4 +29,11 @@
   padding: 0 16px;
   width: 100vw;
   object-fit: cover;
+}
+
+.map {
+  width: 100vw;
+  height: 50vh;
+  border-width: 0;
+  padding: 16px;
 }

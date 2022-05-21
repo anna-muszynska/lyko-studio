@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import * as styles from "../styles/index.module.css"
+import * as styles from "./index.module.css"
 
 export default function Home() {
   return (
