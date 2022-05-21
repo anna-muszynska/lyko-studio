@@ -1,7 +1,23 @@
 import React from "react"
 import * as styles from "../styles/HamburgerMenu.module.css"
+import { Link } from "gatsby"
 
 const HamburgerMenu = () => {
+  const scrollToElement = pageElement => {
+    let element = document.getElementById(pageElement)
+
+    console.log(element)
+
+    let positionX = 0
+    let positionY = -81
+
+    positionX += element.offsetLeft
+    positionY += element.offsetTop
+    console.log(positionX)
+    console.log(positionY)
+    window.scrollTo({ top: positionY, left: positionX, behavior: "smooth" })
+  }
+
   return (
     <>
       <nav>
@@ -13,21 +29,21 @@ const HamburgerMenu = () => {
               <span className={`${styles.line} ${styles.line2}`} />
               <span className={`${styles.line} ${styles.line3}`} />
             </div>
-            <div className={styles.logo}>
+            <Link to={"/"} className={styles.logo}>
               <img src="/logo.png" alt={"logo"} />
-            </div>
+            </Link>
             <div className={styles.menuItems}>
               <ul>
-                <li>
+                <li onClick={() => scrollToElement("aboutUs")}>
                   <a href="#">O nas</a>
                 </li>
-                <li>
+                <li onClick={() => scrollToElement("architecture")}>
                   <a href="#">Architektura</a>
                 </li>
-                <li>
+                <li onClick={() => scrollToElement("visualisations")}>
                   <a href="#">Wizualizacje</a>
                 </li>
-                <li>
+                <li onClick={() => scrollToElement("contact")}>
                   <a href="#">Kontakt</a>
                 </li>
               </ul>

@@ -1,7 +1,15 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
 .mainPhoto {
   height: calc(100vh - 65px);
   width: 100vw;
   object-fit: cover;
+  margin-top: 65px;
 }
 
 .about p {

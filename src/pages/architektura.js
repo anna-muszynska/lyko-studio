@@ -9,7 +9,7 @@ const Architektura = () => {
   return (
     <>
       <header>
-        <nav>
+        <nav className={styles.navigation}>
           <HamburgerMenu />
         </nav>
         <img
@@ -19,7 +19,7 @@ const Architektura = () => {
         />
       </header>
       <main>
-        <section className={styles.about}>
+        <section className={styles.about} id={"aboutUs"}>
           <p>
             Realizujemy projekty związane z architekturą, urbanistyką,
             projektowaniem wnętrz oraz grafiką użytkową.
@@ -52,7 +52,7 @@ const Architektura = () => {
             }
           />
         </section>
-        <PhotoGrid
+        <PhotoGrid id={'architecture'}
           photos={[
             { src: "/square_photo.png", alt: "img1" },
             { src: "/square_photo.png", alt: "img2" },
@@ -83,7 +83,7 @@ const Architektura = () => {
             ]}
           />
         </section>
-        <PhotoGrid
+        <PhotoGrid id={'visualisations'}
           photos={[
             { src: "/square_photo.png", alt: "img7" },
             { src: "/square_photo.png", alt: "img8" },
@@ -95,7 +95,7 @@ const Architektura = () => {
         />
       </main>
       <footer>
-        <div>
+        <div id={'contact'}>
           <pre>
             <p>
               {`ŁYKO studio Adam Łyko 
