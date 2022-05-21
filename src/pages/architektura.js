@@ -52,7 +52,8 @@ const Architektura = () => {
             }
           />
         </section>
-        <PhotoGrid id={'architecture'}
+        <PhotoGrid
+          id={"architecture"}
           photos={[
             { src: "/square_photo.png", alt: "img1" },
             { src: "/square_photo.png", alt: "img2" },
@@ -83,7 +84,8 @@ const Architektura = () => {
             ]}
           />
         </section>
-        <PhotoGrid id={'visualisations'}
+        <PhotoGrid
+          id={"visualisations"}
           photos={[
             { src: "/square_photo.png", alt: "img7" },
             { src: "/square_photo.png", alt: "img8" },
@@ -95,7 +97,7 @@ const Architektura = () => {
         />
       </main>
       <footer>
-        <div id={'contact'}>
+        <div id={"contact"}>
           <pre>
             <p>
               {`ŁYKO studio Adam Łyko 

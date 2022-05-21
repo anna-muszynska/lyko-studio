@@ -1,16 +1,16 @@
-import React, {useRef} from "react"
+import React, { useRef } from "react"
 import * as styles from "../styles/HamburgerMenu.module.css"
 import { Link } from "gatsby"
 
 const HamburgerMenu = () => {
-  const checkbox = useRef();
+  const checkbox = useRef()
 
-  const scrollToElement = (pageElement) => (event) => {
+  const scrollToElement = pageElement => event => {
     checkbox.current.click()
 
     let element = document.getElementById(pageElement)
 
-    event.preventDefault();
+    event.preventDefault()
 
     console.log(element)
 
@@ -29,7 +29,13 @@ const HamburgerMenu = () => {
       <nav>
         <div className={styles.navbar}>
           <div className={`${styles.container} ${styles.navContainer}`}>
-            <input className={styles.checkbox} type="checkbox" name="" id="" ref={checkbox}/>
+            <input
+              className={styles.checkbox}
+              type="checkbox"
+              name=""
+              id=""
+              ref={checkbox}
+            />
             <div className={styles.hamburgerLines}>
               <span className={`${styles.line} ${styles.line1}`} />
               <span className={`${styles.line} ${styles.line2}`} />
