@@ -1,10 +1,16 @@
-import React from "react"
+import React, {useRef} from "react"
 import * as styles from "../styles/HamburgerMenu.module.css"
 import { Link } from "gatsby"
 
 const HamburgerMenu = () => {
-  const scrollToElement = pageElement => {
+  const checkbox = useRef();
+
+  const scrollToElement = (pageElement) => (event) => {
+    checkbox.current.click()
+
     let element = document.getElementById(pageElement)
+
+    event.preventDefault();
 
     console.log(element)
 
@@ -23,7 +29,7 @@ const HamburgerMenu = () => {
       <nav>
         <div className={styles.navbar}>
           <div className={`${styles.container} ${styles.navContainer}`}>
-            <input className={styles.checkbox} type="checkbox" name="" id="" />
+            <input className={styles.checkbox} type="checkbox" name="" id="" ref={checkbox}/>
             <div className={styles.hamburgerLines}>
               <span className={`${styles.line} ${styles.line1}`} />
               <span className={`${styles.line} ${styles.line2}`} />
@@ -34,16 +40,16 @@ const HamburgerMenu = () => {
             </Link>
             <div className={styles.menuItems}>
               <ul>
-                <li onClick={() => scrollToElement("aboutUs")}>
+                <li onClick={scrollToElement("aboutUs")}>
                   <a href="#">O nas</a>
                 </li>
-                <li onClick={() => scrollToElement("architecture")}>
+                <li onClick={scrollToElement("architecture")}>
                   <a href="#">Architektura</a>
                 </li>
-                <li onClick={() => scrollToElement("visualisations")}>
+                <li onClick={scrollToElement("visualisations")}>
                   <a href="#">Wizualizacje</a>
                 </li>
-                <li onClick={() => scrollToElement("contact")}>
+                <li onClick={scrollToElement("contact")}>
                   <a href="#">Kontakt</a>
                 </li>
               </ul>
